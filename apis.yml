@@ -1,8 +1,31 @@
 aid: mushroom-material
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mushroom-material.png
 name: Mushroom Material
-description: Mushroom Material is a company surfaced as a portfolio company of techstars and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Mushroom Material is a New Zealand and Singapore based sustainable-packaging
+  startup founded in 2020 by Shaun Seaman and Jotinder Singh that grows a
+  biodegradable, home-compostable alternative to expanded polystyrene (Styrofoam)
+  from fungal mycelium. The company combines agricultural byproducts such as wood
+  chips, sawdust, hemp straw and cardboard with mycelium to grow millions of
+  pellets, coats them in a biopolymer binder, and uses compression molding to
+  shape protective packaging that drops into existing Styrofoam production lines.
+  The material offers shock absorption, low density and natural water resistance
+  while composting in months. A Techstars-backed company, Mushroom Material raised
+  a US$5M+ (NZ$8.5M) seed round led by Wavemaker Partners and Singapore's SEEDS
+  Capital (with Icehouse Ventures, K1W1 and Black Kite Capital) to build a pilot
+  plant in Auckland. This profile is a materials/manufacturing company in the API
+  Evangelist network; it has no public API surface.
 url: https://raw.githubusercontent.com/api-evangelist/mushroom-material/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Sustainability
+- Packaging
+- Materials
+- Mycelium
+- Biomaterials
+- CleanTech
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mushroom-material-domain-security.yml
 - type: Website
-  url: https://mushroommaterial.com/
+  url: https://www.mushroommaterial.com/
+- type: LinkedIn
+  url: https://sg.linkedin.com/company/mushroom-material
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
