@@ -38,6 +38,9 @@ description: >-
   plant in Auckland. This profile is a materials/manufacturing company in the API
   Evangelist network; it has no public API surface.
 url: https://raw.githubusercontent.com/api-evangelist/mushroom-material/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "This profile is a materials/manufacturing company in the API Evangelist network; it has no public API surface."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
