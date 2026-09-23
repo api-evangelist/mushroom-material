@@ -2,18 +2,23 @@ generated: '2026-07-20'
 method: searched
 source: live probe of https://www.mushroommaterial.com/.well-known/*
 host: https://www.mushroommaterial.com
-note: >-
-  Mushroom Material is a physical sustainable-packaging (mycelium) manufacturer
-  with no public API. No .well-known discovery surface is published. Absence is
-  a valid, expected result.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+note: Mushroom Material is a physical sustainable-packaging (mycelium) manufacturer with no public API.
+  No .well-known discovery surface is published. Absence is a valid, expected result.
+hosts:
+- host: https://www.mushroommaterial.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
